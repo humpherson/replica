@@ -71,7 +71,7 @@ Copilot requires GitHub sign-in, but creating the local starter does not require
 
 ### Create a starter if you need one
 
-A starter is a ready-made app to build your prototype from. Choose **Minimal** for a small example app to adapt to your own design system, or **CoreAI Sandbox** for an app with an existing layout and Microsoft's CoreAI design system.
+A starter is a ready-made app to build your prototype from. Choose **Minimal** for a small example app to adapt to your own design system, **CoreAI Sandbox** for an app with an existing layout and Microsoft's CoreAI design system, or **GOV.UK** for a neutral starting page with GOV.UK Frontend and active guidance.
 
 The installer creates a new folder for it, named `my-prototype` in the example below. Choose a name that is not already in use.
 
@@ -97,6 +97,7 @@ The new folder is an independent local Git repository with the copied files save
    | --- | --- |
    | **Minimal** (`minimal`) | You want a small example app to adapt to your own design system. |
    | **CoreAI Sandbox** (`coreai`) | You want an existing navigation layout and prebuilt interface elements, such as buttons and menus, from Microsoft's CoreAI design system. |
+   | **GOV.UK** (`govuk`) | You want a neutral React app with GOV.UK Frontend components and active design guidance. Available through a local Replica source containing this entry. |
 
 4. Run the installer with your choice and new folder name. This example selects Minimal; replace `minimal` with your chosen catalog ID:
 

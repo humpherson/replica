@@ -1,0 +1,97 @@
+{
+  "version": 2,
+  "intake": {
+    "design-system-docs": {
+      "status": "answered",
+      "answer": "Use the official GOV.UK Design System documentation: https://design-system.service.gov.uk/, https://design-system.service.gov.uk/get-started/, https://design-system.service.gov.uk/styles/, https://design-system.service.gov.uk/components/, https://design-system.service.gov.uk/patterns/, https://design-system.service.gov.uk/accessibility/. Technical implementation documentation: https://frontend.design-system.service.gov.uk/. Target package version: govuk-frontend@6.6.0. Follow relevant detail pages, including their HTML examples, accessibility guidance, usage rules and research findings. The documentation websites are updated over time, so check implementation details against the pinned package and report any mismatch. Preserve official component markup and behaviour when adapting examples to React. Review guidance for labels, legends, headings, focus states, and extending components before creating wrappers or custom variations."
+    },
+    "design-system-package": {
+      "status": "answered",
+      "answer": "Use the official npm package govuk-frontend, pinned to version 6.6.0. Release: https://github.com/alphagov/govuk-frontend/releases/tag/v6.6.0. Component guidance: https://design-system.service.gov.uk/components/. Technical documentation: https://frontend.design-system.service.gov.uk/. This is not a React component library. Keep the existing React/Vite starter and integrate the official GOV.UK styles, assets and JavaScript. Use small local React wrappers that preserve the documented HTML, accessibility attributes and behaviour. No third-party React adapter is selected. Propose any additional dependencies, including Sass if needed, before installing them. Check JavaScript initialisation against React mounting and route changes."
+    },
+    "design-system-repository": {
+      "status": "answered",
+      "answer": "https://github.com/alphagov/govuk-frontend. Revision: v6.6.0. Use this tagged source to check component markup, Sass, JavaScript and accessibility behaviour against govuk-frontend@6.6.0."
+    },
+    "tokens": {
+      "status": "answered",
+      "answer": "Primary token source: the official Sass variables, functions and mixins shipped with govuk-frontend@6.6.0. Supplementary JSON token reference: https://github.com/Sulei-UK/GDS-Design-Tokens. The repository currently lists gds-tokens.json, although its README calls the file master-tokens.json. Inspect the actual file and record the commit used. This is a community-maintained mapping. Validate its format and values against GOV.UK Frontend 6.6.0 before using it. Report discrepancies rather than overriding official values. Use the standard GOV.UK theme initially. Do not activate NHS, MoJ or MoneyHelper overrides. No separate token-processing package is selected."
+    },
+    "mcp": {
+      "status": "skipped",
+      "answer": "Neither — no design-system MCP or CLI is configured. Supplementary AI guidance: https://raw.githubusercontent.com/ministryofjustice/prototype-kit-ai-context/main/ai-context.md. Register this as an additional documentation source. Review its content-design and accessibility guidance against the official GOV.UK documentation. It targets the GOV.UK Prototype Kit with Nunjucks and Express. Do not apply its framework, routing, file-structure or macro requirements to this React/Vite project. Do not adopt the file wholesale as project instructions."
+    },
+    "product": {
+      "status": "skipped",
+      "answer": "Skip product sources for now. This project is a reusable Replica starting point using GOV.UK Frontend 6.6.0. No specific service, user journey, business rules or research findings have been selected yet. Keep those gaps explicit. Do not invent product requirements or present GOV.UK design-system guidance as service-specific research. We’ll provide a brief when building the first prototype."
+    }
+  },
+  "sources": [
+    {
+      "id": "govuk-design-system",
+      "kind": "public-url",
+      "location": "https://design-system.service.gov.uk/",
+      "owner": "design-system"
+    },
+    {
+      "id": "govuk-get-started",
+      "kind": "public-url",
+      "location": "https://design-system.service.gov.uk/get-started/",
+      "owner": "design-system"
+    },
+    {
+      "id": "govuk-styles",
+      "kind": "public-url",
+      "location": "https://design-system.service.gov.uk/styles/",
+      "owner": "design-system"
+    },
+    {
+      "id": "govuk-components",
+      "kind": "public-url",
+      "location": "https://design-system.service.gov.uk/components/",
+      "owner": "design-system"
+    },
+    {
+      "id": "govuk-patterns",
+      "kind": "public-url",
+      "location": "https://design-system.service.gov.uk/patterns/",
+      "owner": "design-system"
+    },
+    {
+      "id": "govuk-accessibility",
+      "kind": "public-url",
+      "location": "https://design-system.service.gov.uk/accessibility/",
+      "owner": "design-system"
+    },
+    {
+      "id": "govuk-frontend-technical",
+      "kind": "public-url",
+      "location": "https://frontend.design-system.service.gov.uk/",
+      "owner": "design-system"
+    },
+    {
+      "id": "govuk-frontend-source",
+      "kind": "public-url",
+      "location": "https://github.com/alphagov/govuk-frontend/tree/v6.6.0",
+      "owner": "design-system"
+    },
+    {
+      "id": "govuk-frontend-release",
+      "kind": "public-url",
+      "location": "https://github.com/alphagov/govuk-frontend/releases/tag/v6.6.0",
+      "owner": "design-system"
+    },
+    {
+      "id": "community-gds-tokens",
+      "kind": "public-url",
+      "location": "https://github.com/Sulei-UK/GDS-Design-Tokens",
+      "owner": "design-system"
+    },
+    {
+      "id": "moj-ai-guidance",
+      "kind": "public-url",
+      "location": "https://raw.githubusercontent.com/ministryofjustice/prototype-kit-ai-context/main/ai-context.md",
+      "owner": "design-system"
+    }
+  ]
+}

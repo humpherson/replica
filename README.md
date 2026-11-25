@@ -74,6 +74,7 @@ For a new repository, choose a starter:
 
 - **Minimal:** A small example app to adapt to your own design system.
 - **CoreAI Sandbox:** An app with an existing navigation layout and prebuilt interface elements, such as buttons and menus, from Microsoft's CoreAI design system.
+- **GOV.UK:** A neutral React starting point with GOV.UK Frontend components, assets and active design guidance. It is available through the local source installer in a checkout or archive containing this catalog entry; the upstream downloader lists only its downloaded catalog.
 
 Agents creating or adapting repositories should follow [prototype repository setup](docs/prototype-repository-setup.md).
 

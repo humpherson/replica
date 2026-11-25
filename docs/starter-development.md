@@ -9,6 +9,7 @@ Replica assembles one app with a shared tooling bundle. Installed repositories a
 | `starters/catalog.tsv` | Stable IDs, source directories, display names and descriptions |
 | `starters/minimal/` | Minimal, its TanStack Router app and route scaffold |
 | `starters/coreai/` | CoreAI Sandbox, its React Router app, design-system skills and baseline context |
+| `starters/govuk/` | GOV.UK, its React app, DOM enhancement wrappers, asset integration, scaffolder and active context |
 | `starters/shared/` | Replica skills and context templates, plugin startup, browser configuration and workflow guides |
 | `scripts/create-prototype-repo.sh` | Selection, safe assembly and independent Git initialization |
 | `scripts/install-starter.sh` | Download and archive validation before calling the same creator |
@@ -36,6 +37,7 @@ Use a new destination outside Replica whose parent already exists:
 bash scripts/create-prototype-repo.sh --list
 bash scripts/check-starter.sh minimal ../check-minimal
 bash scripts/check-starter.sh coreai ../check-coreai
+bash scripts/check-starter.sh govuk ../check-govuk
 node --test scripts/create-prototype-repo.test.mjs scripts/setup-replica-plugin.test.mjs scripts/select-ci-suites.test.mjs
 node --test starters/minimal/.agents/skills/create-prototype-from-production/scripts/*.node-test.mjs
 ```
@@ -49,3 +51,11 @@ Both creation paths commit every copied file, including files matched by starter
 Starter CI expands the catalog across its Node matrix and checks assembled repositories. The tooling suite covers local and archive creation, selection, future entries, collisions, safety and copied guidance. [Shared testing guidance](testing-and-review.md) owns the additional selector and workflow checks.
 
 Rendered acceptance is separate from assembly and build checks. Follow the selected app's instructions and the shared browser workflow when checking the included UI. An unavailable package or browser is an explicit verification blocker, not a reason to change dependencies or claim a rendered pass.
+
+## GOV.UK starter
+
+GOV.UK ships one welcome route and a missing-route fallback. Its root owns the shell and main landmark; generated pages render only content. The app-owned scaffold emits GOV.UK markup while retaining the shared engine's collision checks and metadata contract. The app guide and active context describe the supported wrappers and component lifecycle limitations. No service journey or application storage is included.
+
+Create a local project from a source tree containing this catalog entry with `bash scripts/create-prototype-repo.sh --starter govuk ../my-govuk-prototype`. The download installer fetches the upstream main archive: local registration alone does not make the starter available there.
+
+When using a downloaded source archive without Git metadata, assembly examines every file under the selected app and shared bundle. Install dependencies only in assembled projects outside that source tree; dependencies, generated files and symlinks inside the archive sources can make assembly fail or copy unwanted output. A Git checkout instead selects tracked files, as described above.

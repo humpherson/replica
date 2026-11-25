@@ -65,6 +65,7 @@ node --version
 bash scripts/create-prototype-repo.sh --list
 bash scripts/check-starter.sh minimal ../check-minimal
 bash scripts/check-starter.sh coreai ../check-coreai
+bash scripts/check-starter.sh govuk ../check-govuk
 ```
 
 Edit generic Replica skills and context templates under `starters/shared/.agents/`. App-specific skills and baseline context stay with the app. Keep consuming-team context separate from shared files. Local-checkout creation includes tracked files with working-tree edits; stage new files before checking assembly, without committing them.

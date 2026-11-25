@@ -29,7 +29,7 @@ Keep supplied reference apps and design-system sources for step 4. Creating the 
 
 Read the current [starter catalog](../starters/catalog.tsv) or run the installer's `--list`. Reuse an explicit choice from the conversation. Otherwise show the available names and descriptions and ask the user which app to start with. Do not infer selection from a passing design-system reference. A reference can instead be an input for later customization.
 
-The catalog currently offers `minimal` and `coreai`. Commands without `--starter` select Minimal for compatibility; agents should resolve the user's choice before creation. New catalog entries use the same commands.
+The catalog currently offers `minimal`, `coreai` and `govuk`. The GOV.UK app supplies a neutral welcome page with integrated GOV.UK Frontend and active guidance. Local catalog changes are available through the local creator; they do not change the upstream download installer until published. Commands without `--starter` select Minimal for compatibility; agents should resolve the user's choice before creation. New catalog entries use the same commands.
 
 Create the starter only when a new repository is needed, using the destination agreed in step 1. When continuing with an existing app, preserve it and continue at step 3.
 
